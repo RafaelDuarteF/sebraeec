@@ -22,11 +22,22 @@
 		<?php echo $mensagem[$y]; ?>
     </p>
      <p id='dataPost'>
-		<?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataPost[$y])));; ?>
+		<?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataPost[$y]))); ?>
     </p>
+    <?php
+      if($_SESSION['cpfAssoc'] == $cpfAssocPost[$y]){
+         ?>
+         <div class="delPost" id="delPost<?php echo $y; ?>" onclick="deletarPost(this.id)">Deletar postagem</div>
+         <form class="formDelPost" action="deletarPost.php" method="POST" id="formDelPost">
+            <input type="hidden" type="text" value="<?php echo $codPost[$y]; ?>" name="codPostDel">
+         </form>
+         <?php
+      }
+      
+    ?>
     <p class="abrComent" id="abrComentId<?php echo $vi; ?>" onclick="getId(this.id)"><b>Comentários</b></p><br>
     <?php
-       $x = $u + 1;
+      $x = $u + 1;
       while($x > 0){
          $x--;
          if($codPost[$y] == $cod_post[$x]){
@@ -41,6 +52,10 @@
        <p id="nomeComent"><?php echo $nomeAssocComent[$x]; ?></p>
        <p id="mensagemComent"><?php echo $comentario[$x]; ?></p>
        <p id="dataComent"><?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataComent[$x]))); ?>
+       <div class="delComent" id="delComent<?php echo $x; ?>" onclick="deletarComentario(this.id)">Deletar comentário</div>
+         <form class="formDelPost" action="deletarComent.php" method="POST" id="formDelComent">
+            <input type="hidden" type="text" value="<?php echo $cod_coment[$x]; ?>" name="codComentDel">
+         </form>
     </p>
     <br>
     </div>
@@ -71,5 +86,31 @@
          form = $(".formComentId" + kol); form.hide();
          cam = false;
       }
+   }
+   function deletarPost(id){
+      swal({
+         title: "Deseja apagar essa postagem?",
+         text: "Deseja apagar sua postagem? Essa ação não poderá ser desfeita.",
+         icon: "warning",
+         buttons: ['Não', 'Sim'],
+         dangerMode: false,
+         })
+         .then((willEnv) => {
+         if (willEnv) 
+            document.getElementById("formDelPost", id.substr(-1)).submit();
+      }); 
+   }
+   function deletarComentario(idC){
+      swal({
+         title: "Deseja apagar esse comentário?",
+         text: "Deseja apagar seu comentário? Essa ação não poderá ser desfeita.",
+         icon: "warning",
+         buttons: ['Não', 'Sim'],
+         dangerMode: false,
+         })
+         .then((willEnv) => {
+         if (willEnv) 
+            document.getElementById("formDelComent", idC.substr(-1)).submit();
+      }); 
    }
 </script>

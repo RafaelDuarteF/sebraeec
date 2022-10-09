@@ -1987,10 +1987,12 @@ object{
 .abrComent{
 	font-size: 13px;
 	margin-top: 10px;
+	width: auto;
 	color: #FFC000;
+	text-align: left;
 	cursor: pointer;
 }
-.abrComent:hover{
+.abrComent b:hover{
 	color: gray;
 }
 #imgComent{
@@ -2023,6 +2025,21 @@ object{
 #enviarComent{
 	margin-top: 2px;
 	margin-left: -446px;
+}
+.delPost, .delComent{
+	color: red;
+	font-size: 12px;
+	margin-top: 3px;
+}
+.delPost:hover, .delComent:hover{
+	cursor: pointer;
+	opacity: 70%;
+}
+.formDelPost{
+	display: none;
+}
+.delComent{
+	margin-left: 25px;
 }
 
 
@@ -2337,4 +2354,13 @@ object{
 	margin-top: 60px;
 	margin-bottom: 60px;
 	font-size: 20px;
+}
+
+/* ADAPTAÇÃO */
+
+
+@media only screen and (max-width: 650px){
+	header, footer, #footer-one, #mapsG {
+		width: 1280px;
+	}
 }
