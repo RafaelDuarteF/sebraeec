@@ -850,6 +850,7 @@ h4{
 #slider-sobreClube{
 	height: 300px;
 	width: 1280px;
+	margin-top: 20px;
 	border-bottom: 1px solid rgb(165, 165, 165);
 	margin-bottom: 30px; /* Propriedades do slider */
 }

@@ -34,7 +34,7 @@ session_start();
 			});
 		</script>
 		<?php require_once("header.incLog.php"); ?>
-		<div id="title-bochaPag-div"><img src="img/bochasl.jpg"></div>
+		<div id="title-bochaPag-div"><img src="img/bochasl.png?<?php echo time(); ?>"></div>
 		<div id="one-body-part-bochaPag"> <!-- Primeira partição do corpo da página. -->
 			<div id="text-bochaPag-div">
 				<br><br>

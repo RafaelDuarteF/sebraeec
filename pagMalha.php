@@ -25,7 +25,7 @@
 			});
 		</script>
 		<?php require_once("header.inc.php"); ?>
-		<div id="title-malhaPag-div"><img src="img/malhasl.jpg?<?php echo time(); ?>"></div>
+		<div id="title-malhaPag-div"><img src="img/malhasl.png?<?php echo time(); ?>"></div>
 		<div id="one-body-part-malhaPag"> <!-- Primeira partição do corpo da página. -->
 			<div id="text-malhaPag-div">
 				<br><br>

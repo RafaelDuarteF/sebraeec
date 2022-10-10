@@ -32,7 +32,7 @@
 			<div class="body-parts-qSomos" id="one-body-part-qSomos"> <!-- Primeira partição do corpo da página. -->
 				<h3 class="text-title-qSomos"><br>Desenvolvedores do projeto</h3>
 				<div class="devs-projeto">
-					<div id="rafael-foto" class="fotos"><img src="img/participantes/rafael_duarte.png"></div>
+					<div id="rafael-foto" class="fotos"><img src="img/participantes/rafael_duarte.jpg"></div>
 					<p class="nome-devs">Rafael Duarte de Freitas</p>
 					<p class="texts-devs"><b>LÍDER</b>: Programação Web</p>
 				</div>
@@ -47,7 +47,7 @@
 					<p class="texts-devs"><b>LÍDER</b>: Desenvolvimento de Sistemas</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="lhivya-foto" class="fotos"><img src="img/participantes/lhivya_macedo.jpg"></div>
+					<div id="lhivya-foto" class="fotos"><img src="img/participantes/lhivya_macedo.jfif?<?php echo time(); ?>"></div>
 					<p class="nome-devs">Lhivya Macedo de Lima</p>
 					<p class="texts-devs"><b>LÍDER</b>: Banco de Dados</p>
 				</div>
@@ -62,7 +62,7 @@
 					<p class="texts-devs">Desenvolvimento de Sistemas.</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="isabella-foto" class="fotos"><img src="img/participantes/isabella_freitas.jpg"></div>
+					<div id="isabella-foto" class="fotos"><img src="img/participantes/isabella_freitas.jpeg?<?php echo time(); ?>"></div>
 					<p class="nome-devs">Isabella Freitas Ribeiro</p>
 					<p class="texts-devs">Programação Web & Design Digital</p>
 				</div>
@@ -77,7 +77,7 @@
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="raissa-foto" class="fotos"><img src="img/participantes/raissa_marinho.jpg"></div>
+					<div id="raissa-foto" class="fotos"><img src="img/participantes/raissa_marinho.jpeg?<?php echo time(); ?>"></div>
 					<p class="nome-devs">Raissa Marinho Aguiar</p>
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
@@ -94,11 +94,6 @@
 				<div class="devs-projeto">
 					<div id="marcos-foto" class="fotos"><img src="img/participantes/marcos_vinicius.jpg"></div>
 					<p class="nome-devs">Marcos Vinicius Murilla</p>
-					<p class="texts-devs">Programação Web & Design Digital</p>
-				</div>
-				<div class="devs-projeto">
-					<div id="gabriel_cerejo-foto" class="fotos"><img src="img/participantes/gabriel_cerejo.jpg"></div>
-					<p class="nome-devs">Gabriel Cerejo Bellintani</p>
 					<p class="texts-devs">Programação Web & Design Digital</p>
 				</div>
 				<div class="devs-projeto">
@@ -132,7 +127,7 @@
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="gustavo-foto" class="fotos"><img src="img/participantes/gustavo_saraiva.jpg"></div>
+					<div id="gustavo-foto" class="fotos"><img src="img/participantes/gustavo_saraiva.jfif?<?php echo time(); ?>"></div>
 					<p class="nome-devs">Gustavo Saraiva Silva</p>
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
@@ -179,6 +174,11 @@
 				<div class="devs-projeto">
 					<div id="luiz-foto" class="fotos"><img src="img/participantes/luiz_henrique.png"></div>
 					<p class="nome-devs">Luiz Henrique Vieira Santos</p>
+					<p class="texts-devs">Desenvolvimento de Sistemas</p>
+				</div>
+				<div class="devs-projeto">
+					<div id="luiz-foto" class="fotos"><img src="img/participantes/kaio_santana.jpeg"></div>
+					<p class="nome-devs">Kaio Santana Rodrigues Santos</p>
 					<p class="texts-devs">Desenvolvimento de Sistemas</p>
 				</div>
 			</div>

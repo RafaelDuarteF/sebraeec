@@ -34,7 +34,7 @@ session_start();
 			});
 		</script>
 		<?php require_once("header.incLog.php"); ?>
-		<div id="slider-sobreClube"><img src="img/sobclube.jpg"></div>
+		<div id="slider-sobreClube"><img src="img/sobclube.png?<?php echo time();?>"></div>
 		<div id="one-body-part-sobreClube"> <!-- Primeira partição do corpo da página. -->
 			<h2 id="title-pagSobreClube">SEBRAE ESPORTE CLUBE</h2>
 			<h3 class="title-sobreClube">História do clube</h3>
