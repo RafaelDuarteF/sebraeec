@@ -756,11 +756,9 @@ h4{
 	margin-left: 10px; /* Propriedades da área do texto contendo informações sobre a bocha ou malha */
 }
 #one-body-part-bochaPag, #one-body-part-malhaPag{
-	height: 1200px;
+	height: auto;
+	margin-bottom: 30px;
 	width: 1280px; /* Propriedades da primeira área do corpo da página, que contem às informações sobre a bocha ou malha */
-}
-#one-body-part-malhaPag{
-	height: 1050px;
 }
 .bochaMalha-img{
 	width: 450px;
@@ -1701,7 +1699,9 @@ object{
 	margin-bottom: 40px;
 	width: 1280px;
 	height: 500px;
-	background-color: #000;
+}
+#sliderSuporte img {
+	border-radius: 20px;
 }
 #title-suporte{
 	text-align: center;

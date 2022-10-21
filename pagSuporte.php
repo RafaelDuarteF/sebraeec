@@ -20,7 +20,7 @@
 			});
 		</script>
 		<?php require_once("header.inc.php"); ?>
-		<div id="sliderSuporte"></div>
+		<div id="sliderSuporte"><img src="img/slidersu.jpeg"></div>
 		<div id="one-body-part-suporte">
 			<h2 id="title-suporte">Suporte ao clube</h2>
 			<div id="redirects-suport">
