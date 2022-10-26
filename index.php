@@ -33,7 +33,7 @@
 			<div id="slider">
 				<img class="slidersImg" id="slider-img4" src="img/slider2.jpg?<?php echo time(); ?>" alt="Faça seu agendamento ao clube.">
 				<img class="slidersImg" id="slider-img3" src="img/slider3.jpg?<?php echo time(); ?>" alt="Nossas modalidades."> 
-				<img class="slidersImg" id="slider-img2" src="img/slider4.jpg?<?php echo time(); ?>" alt="Nada ainda."> 
+				<!-- <img class="slidersImg" id="slider-img2" src="img/slider4.jpg?<?php echo time(); ?>" alt="Nada ainda.">  -->
 				<img class="slidersImg" id="slider-img1" src="img/slider1.jpg?<?php echo time(); ?>" alt="Associe-se ao clube.">  <!-- A imagem emitida pelo slider -->
 			</div>
 		</div>

@@ -25,13 +25,15 @@
 		<?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataPost[$y]))); ?>
     </p>
     <?php
-      if($_SESSION['cpfAssoc'] == $cpfAssocPost[$y]){
+      if(isset($_SESSION['cpfAssoc'])){
+         if($_SESSION['cpfAssoc'] == $cpfAssocPost[$y]){
          ?>
          <div class="delPost" id="delPost<?php echo $y; ?>" onclick="deletarPost(this.id)">Deletar postagem</div>
          <form class="formDelPost" action="deletarPost.php" method="POST" id="formDelPost">
             <input type="hidden" type="text" value="<?php echo $codPost[$y]; ?>" name="codPostDel">
          </form>
          <?php
+         }
       }
       
     ?>
@@ -46,17 +48,24 @@
             while($imgCom = $consultaImgCom->fetch_array()){
                $img = $imgCom['PATH'];
             }
-    ?>
-    <div class="comentarios comentariosId<?php echo $vi; ?>">
-       <img src="<?php echo $img; ?>" id="imgComent">
-       <p id="nomeComent"><?php echo $nomeAssocComent[$x]; ?></p>
-       <p id="mensagemComent"><?php echo $comentario[$x]; ?></p>
-       <p id="dataComent"><?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataComent[$x]))); ?>
-       <div class="delComent" id="delComent<?php echo $x; ?>" onclick="deletarComentario(this.id)">Deletar comentário</div>
-         <form class="formDelPost" action="deletarComent.php" method="POST" id="formDelComent">
-            <input type="hidden" type="text" value="<?php echo $cod_coment[$x]; ?>" name="codComentDel">
-         </form>
-    </p>
+      ?>
+      <div class="comentarios comentariosId<?php echo $vi; ?>">
+         <img src="<?php echo $img; ?>" id="imgComent">
+         <p id="nomeComent"><?php echo $nomeAssocComent[$x]; ?></p>
+         <p id="mensagemComent"><?php echo $comentario[$x]; ?></p>
+         <p id="dataComent"><?php echo str_replace('-', '/', date('d-m-Y', strtotime($dataComent[$x]))); ?></p>
+         <?php
+            if(isset($_SESSION['cpfAssoc'])){
+               if($_SESSION['cpfAssoc'] == $cpfComent[$x]){
+         ?>
+         <div class="delComent" id="delComent<?php echo $x; ?>" onclick="deletarComentario(this.id)">Deletar comentário</div>
+            <form class="formDelPost" action="deletarComent.php" method="POST" id="formDelComent">
+               <input type="hidden" type="text" value="<?php echo $cod_coment[$x]; ?>" name="codComentDel">
+            </form>
+         <?php
+               }
+            }
+         ?>
     <br>
     </div>
 <?php
