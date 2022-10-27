@@ -43,7 +43,7 @@ session_start();
 			<div id="slider">
 				<img class="slidersImg" id="slider-img4Log" src="img/slider2.jpg?<?php echo time(); ?>" alt="Faça seu agendamento ao clube.">
 				<img class="slidersImg" id="slider-img3Log" src="img/slider3.jpg?<?php echo time(); ?>" alt="Nossas modalidades."> 
-				<!-- <img class="slidersImg" id="slider-img2Log" src="img/slider4.jpg?<?php echo time(); ?>" alt="Nada ainda."> -->
+				<img class="slidersImg" id="slider-img2Log" src="img/slider4.jpg?<?php echo time(); ?>" alt="Nossos produtos.">
 				<img class="slidersImg" id="slider-img1Log" src="img/slider1.jpg?<?php echo time(); ?>" alt="Associe-se ao clube.">  <!-- A imagem emitida pelo slider -->
 			</div>
 		</div>

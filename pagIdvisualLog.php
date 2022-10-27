@@ -44,10 +44,10 @@ session_start();
 			<br>
 			<div id="download-idVisual">
 				<img src="img/pdf.png">
-				<br><a href="docs/IdentidadeVisual.pdf" target="_blank">IdentidadeVisual.pdf</a>
+				<br><a href="docs/IdentidadeVisual.pdf?<?php echo time(); ?>" target="_blank">IdentidadeVisual.pdf</a>
 			</div>
 			<p class="text-pagIdvisual" id="text-Idvisual">Ou acompanhe abaixo a identidade visual do clube:</p>
-			<div id="docIdVisual"><object data="docs/IdentidadeVisual.pdf" type="application/pdf" width="1000px" height="1000px"></object></div> 
+			<div id="docIdVisual"><object data="docs/IdentidadeVisual.pdf?<?php echo time(); ?>" type="application/pdf" width="1000px" height="1000px"></object></div> 
 		</div>
 		<?php require_once("footer.inc.php"); ?>
 		<script>

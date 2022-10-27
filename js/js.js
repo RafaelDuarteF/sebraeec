@@ -370,10 +370,10 @@ function sliderAnimate(){
 }); // Função cujo realiza a troca entre os slides automaticamente a cada 7 segundos.
 
 	$("#slider-img4").click(function(){
-		location.assign("pagProdutos.php");
+		location.assign("pagEventos.php");
 	});	
 	$("#slider-img2").click(function(){
-		location.assign("pagEventos.php");
+		location.assign("pagProdutos.php");
 	});
 	$("#slider-img3").click(function(){
 		location.assign("pagBocha.php");
@@ -382,10 +382,10 @@ function sliderAnimate(){
 		location.assign("pagProdutos.php");
 	});	
 	$("#slider-img4Log").click(function(){
-		location.assign("pagProdutosLog.php");
+		location.assign("pagEventosLog.php");
 	});	
 	$("#slider-img2Log").click(function(){
-		location.assign("pagEventosLog.php");
+		location.assign("pagProdutosLog.php");
 	});
 	$("#slider-img3Log").click(function(){
 		location.assign("pagBochaLog.php");

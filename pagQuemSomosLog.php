@@ -95,7 +95,7 @@ session_start();
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="betsabe-foto" class="fotos"><img src="img/participantes/betsabe_aparecida.jpg"></div>
+					<div id="betsabe-foto" class="fotos"><img src="img/participantes/betsabe_aparecida.jpeg"></div>
 					<p class="nome-devs">Betsabe Aparecida Jorge Ylla</p>
 					<p class="texts-devs">Programação Web & Design Digital</p>
 				</div>
@@ -150,7 +150,7 @@ session_start();
 					<p class="texts-devs">Programação Web</p>
 				</div>
 				<div class="devs-projeto">
-					<div id="ana-foto" class="fotos"><img src="img/participantes/ana_caroline.png"></div>
+					<div id="ana-foto" class="fotos"><img src="img/participantes/ana_caroline.jpeg"></div>
 					<p class="nome-devs">Ana Caroline de Oliveira Ribeiro</p>
 					<p class="texts-devs">Banco de Dados</p>
 				</div>
