@@ -1012,6 +1012,10 @@ h4{
 }
 .right-part{
 	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	width: 375px;
 }
 .imgProdId{
@@ -1076,7 +1080,6 @@ h4{
 	border-radius: 10px;
 	border: 0px;
 	font-size: 18px;
-	margin-left: 95px;
 	margin-top: 124px;
 }
 .comprarProd:hover{
