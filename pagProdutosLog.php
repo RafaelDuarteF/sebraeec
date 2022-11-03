@@ -5,7 +5,7 @@
 </div>
 <?php 
 	session_start();
-	if(isset($_SESSION['nomeAssoc']) && $_SESSION['nomeAssoc'] != ""){
+	if(isset($_SESSION['nomeAssoc'])){
 		require_once("com.incLogAssoc.php"); 
 	}
 	else{

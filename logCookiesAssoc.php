@@ -8,7 +8,6 @@
 			$t++;
 			if($_COOKIE['cpfAssoc'] == $cpfAssoc[$t]){
 				$_SESSION['nomeAssoc'] = $nomeAssoc[$t];
-				echo "ta0";
 				$_SESSION['senhaAssoc'] = $senhaAssoc[$t];
 				$_SESSION['telAssoc'] = $telefoneAssoc[$t];
 				$_SESSION['emailAssoc'] = $emailAssoc[$t];
