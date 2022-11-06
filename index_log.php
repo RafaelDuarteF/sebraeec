@@ -51,7 +51,7 @@ session_start();
 			<div id="bocha-malha">
 			<div id="bocha">
 				<div id="title-bochaInfo"><img src="img/bocha.png" id="img-bocha"></div> 
-				<div class="text-bocha-malha">O jogo de <a href="pagMalhaLog.php">Bocha</a> é muito conhecido por ser um esporte de precisão, 
+				<div class="text-bocha-malha">O jogo de <a href="pagBochaLog.php">Bocha</a> é muito conhecido por ser um esporte de precisão, 
 					normalmente disputado em campeonatos em quadras que possuem uma superfície lisa, onde permitem 
 					o lançamento das bolas denominadas “bochas”, sendo elas de madeira ou resina sintética, tendo como 
 					alvo uma bola menor chamada “bolim”. </div>

@@ -11,6 +11,7 @@
     $idProd = $_POST['prod'];
     $roundMediaAva = $_POST['mediaAva'];
     $mediaAva = $_POST['mediaAvaExat'];
+    $codProdu = $_POST['codProd'];
 ?>
     <div class="one-body-part-produto">
         <div class="left-part">
@@ -97,7 +98,7 @@
             <p class="info">&#9679 <?php echo $info3[$idProd]; ?></p>
             <p class="info">&#9679 <?php echo $info4[$idProd]; ?></p>
             <form id="comprarProdEspec" method="POST" action="pagComprar.php">
-                <input type="text" name="numberProd" id="numberProd" value="<?php echo $idProd; ?>">
+                <input type="text" name="numberProd" id="numberProd" value="<?php echo $codProdu; ?>">
             </form>
             <button class="comprarProd"><b>Comprar</b></button>
             <script>

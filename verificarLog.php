@@ -35,7 +35,7 @@
 				setcookie("logado", 1, time()+432000);
 				setcookie("nome", $_SESSION['nome'], time()+432000);
 				$_SESSION['log'] = true;
-				$adc = "INSERT INTO cliente VALUES('$emailCad', '$nomeCad', '$senhaCad', '$telCad', '$rgCad', '$cpfCad', '$data_nasCad', 'acesso-icon.png')";
+				$adc = "INSERT INTO cliente VALUES('$emailCad', '$nomeCad', '$senhaCad', '$telCad', '$rgCad', '$cpfCad', '$data_nasCad', 'img/acesso-icon.png')";
 				$con = $mysqli->query($adc) or die($mysqli->error);
 			}
 			else{

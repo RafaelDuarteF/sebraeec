@@ -14,11 +14,11 @@
         $ruaComp = $_POST['ruaComp-cadastro'];
         $numProd = $_POST['numProd'];
         if($_SESSION['logAssoc'] == true){
-            $insCompCod = "INSERT INTO compra VALUES('". substr(time(), -10)."', $codProd[$numProd], 0, CURRENT_DATE, ADDDATE(CURRENT_DATE, 20), 1, 'Correios', 'Preparando', null, 0, '$ruaComp', '$numeroComp', '$cepComp', '$complementoComp', '$metodoComp', '$numeroCard', '$celularComp', '$emailComp', '".$_SESSION['cpfAssoc']."', '$nomeComp', '$sobrenomeComp')";
+            $insCompCod = "INSERT INTO compra VALUES('". substr(time(), -10)."', $numProd, 0, CURRENT_DATE, ADDDATE(CURRENT_DATE, 20), 1, 'Correios', 'Preparando', null, 0, '$ruaComp', '$numeroComp', '$cepComp', '$complementoComp', '$metodoComp', '$numeroCard', '$celularComp', '$emailComp', '".$_SESSION['cpfAssoc']."', '$nomeComp', '$sobrenomeComp')";
             $insComo = $mysqli->query($insCompCod) or die ($mysqli->error);
         }
         if($_SESSION['log'] == true){
-            $insCompCod = "INSERT INTO compra VALUES('". substr(time(), -10)."', $codProd[$numProd], 0, CURRENT_DATE, ADDDATE(CURRENT_DATE, 20), 1, 'Correios', 'Preparando', '".$_SESSION['cpf']."', 0, '$ruaComp', '$numeroComp', '$cepComp', '$complementoComp', '$metodoComp', '$numeroCard', '$celularComp', '$emailComp', '".$_SESSION['cpf']."', '$nomeComp', '$sobrenomeComp')";
+            $insCompCod = "INSERT INTO compra VALUES('". substr(time(), -10)."', $numProd, 0, CURRENT_DATE, ADDDATE(CURRENT_DATE, 20), 1, 'Correios', 'Preparando', '".$_SESSION['cpf']."', 0, '$ruaComp', '$numeroComp', '$cepComp', '$complementoComp', '$metodoComp', '$numeroCard', '$celularComp', '$emailComp', '".$_SESSION['cpf']."', '$nomeComp', '$sobrenomeComp')";
             $insComo = $mysqli->query($insCompCod) or die ($mysqli->error);
         }
         $_SESSION['envComp'] = false;

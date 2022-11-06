@@ -101,6 +101,7 @@
                 <p class="numAva"><?php echo $numAva;?></p>
             </div>
             <input type="number" name="prod" class="idProd" value="<?php echo $isa; ?>">
+            <input type="number" name="codProd" class="codProd" value="<?php echo $codProd[$isa] ?>">
             <input type="number" name="mediaAva" class="idProd" value="<?php echo $roundMediaAva; ?>">
             <input type="number" name="mediaAvaExat" class="idProd" value="<?php echo $mediaAva; ?>">
         </form>
